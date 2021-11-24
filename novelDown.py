@@ -45,9 +45,9 @@ class downloader(object):
         # 获取一章的标题
         for item in soup.find_all('h1',class_="bookname"):
             item = str(item)
-            print(item)
+            # print(item)
             title = re.findall(findTitle, item)[0]
-            print(title)
+            # print(title)
 
         return title
 
@@ -94,9 +94,9 @@ class downloader(object):
         
 
 if __name__ == "__main__":
-    base_url = 'xxx'
-    begin_url = 'xxx1'
-    end_url = 'xxx2'
+    base_url = 'http://www.changshengrui.com'
+    begin_url = ''
+    end_url = ''
 
     txt_path = './1.txt'
     novel_down = downloader(base_url, txt_path)
