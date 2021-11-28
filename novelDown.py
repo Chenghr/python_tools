@@ -6,10 +6,17 @@ import requests
 from bs4 import BeautifulSoup
 
 # 根据不同的网页，写不同的正则表达式匹配
+# http://www.changshengrui.com
+# findTitle = re.compile(r'<h1 class="bookname">(.*?)<small>',re.S)
+# findText = re.compile(r'<p>(.*?)</p>',re.S)
+# findLinkTemp = re.compile(r'<a href="(.*?)" id="next_url" rel="next">下一页</a>')
+# findLinkNextChap = re.compile(r'<a href="(.*?)" id="next_url" rel="next">下一章</a>')
+
 findTitle = re.compile(r'<h1 class="bookname">(.*?)<small>',re.S)
 findText = re.compile(r'<p>(.*?)</p>',re.S)
 findLinkTemp = re.compile(r'<a href="(.*?)" id="next_url" rel="next">下一页</a>')
 findLinkNextChap = re.compile(r'<a href="(.*?)" id="next_url" rel="next">下一章</a>')
+<h3>楔子：医闹纠纷·此生何世（修订版）</h3>
 
 class downloader(object):
 
