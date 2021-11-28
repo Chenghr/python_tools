@@ -45,7 +45,6 @@ class downloader(object):
                 or url == 'https://m.aaread.club/book/1962/184577' \
                 or url == 'https://m.aaread.club/book/1962/126875' \
                 or url == 'https://m.aaread.club/book/1962/126876':
-                # 神经病的两章
                 continue
 
             self.chap_url.append(url)
